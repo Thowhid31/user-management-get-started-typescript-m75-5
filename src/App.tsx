@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+
+let student: string = 'John';
+let age: number = 44;
+let isSmart: boolean = true;
+
+let students: string[] = ['Harris', 'Joe'];
+let fees: number[] = [12, 3456, 23, 436];
+
+interface Person {
+  name: string,
+  job?: string,
+  age: number
+}
+
+const person: Person = {
+  name: 'Bill',
+  
+  age: 45
+}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
